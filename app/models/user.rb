@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  include ActiveModel::ForbiddenAttributesProtection            
+  include ActiveModel::ForbiddenAttributesProtection
 
   has_many :memberships
   has_many :repos, through: :memberships
